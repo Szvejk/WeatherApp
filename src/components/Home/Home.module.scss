@@ -1,0 +1,119 @@
+.inputApi {
+	.inputWrapper {
+		width: 100vw;
+		height: 10vh;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.input {
+			width: 20vw;
+			height: 4vh;
+			border: none;
+			padding: 10px;
+			border-radius: 5px;
+			font-weight: 600;
+			background-color: #fff;
+		}
+		button {
+			width: 6vw;
+			height: 4vh;
+			border: none;
+			border-radius: 3px;
+			margin: 10px;
+			background-color: rgb(121, 121, 172);
+			transition: all 0.2s ease;
+			&:hover {
+				background-color: rgb(79, 79, 120);
+				color: #fff;
+			}
+
+			color: black;
+			font-weight: 800;
+			font-size: 1rem;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			background-color: rgb(121, 121, 172);
+		}
+	}
+	.filterViaInput {
+		display: flex;
+
+		align-items: center;
+		justify-content: center;
+
+		.divStacja {
+			display: flex;
+			background-color: #fff;
+			box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+			justify-content: center;
+			height: 300px;
+			width: 400px;
+
+			flex-direction: column;
+
+
+
+			
+			.valueofSearch {
+				display: flex;
+				align-items: center;
+				justify-items: center;
+				background-color: #fff;
+				margin: 5px;
+				flex-direction: column;
+
+				.headache, .okejLike{
+					width: 45px;
+					height: 30px;
+					background-color: #fff;
+					margin: 5px;
+					display: flex;
+				}
+				span {
+					background-color: #fff;
+				}
+				.searchedCity {
+					font-weight: 800;
+					background-color: #fff;
+				}
+				.flexWeather {
+					display: flex;
+					align-items: center;
+					justify-items: center;
+					background-color: #fff;
+					.chmura {
+						width: 45px;
+						height: 30px;
+					}
+					.sun {
+						width: 45px;
+						height: 50px;
+						background-color: #fff;
+					}
+
+					span {
+						font-weight: 600;
+						font-size: 15px;
+						text-transform: uppercase;
+						background-color: #fff;
+					}
+				}
+
+				.rainCorrect {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					.answerCorrect {
+						font-weight: 600;
+					}
+					.rain {
+						width: 20px;
+						height: 25px;
+					}
+				}
+			}
+		}
+	}
+}

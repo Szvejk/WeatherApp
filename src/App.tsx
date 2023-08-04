@@ -1,12 +1,15 @@
-import Header from "./components/Header/Header"
-
+import ApiLink from './components/ApiLink/ApiLink';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
 
 const App = () => {
-  return (
-  
-      <Header />
-    
-  )
-}
+	return (
+		<>
+			<Header />
+			<Home />
+			<ApiLink />
+		</>
+	);
+};
 
-export default App
+export default App;
