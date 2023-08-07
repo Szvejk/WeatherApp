@@ -1,3 +1,7 @@
+:root {
+	--primary-color: white;
+}
+
 .inputApi {
 	.inputWrapper {
 		width: 100vw;
@@ -13,7 +17,7 @@
 			padding: 10px;
 			border-radius: 5px;
 			font-weight: 600;
-			background-color: #fff;
+			background-color: var(--primary-color);
 		}
 		button {
 			width: 6vw;
@@ -25,7 +29,7 @@
 			transition: all 0.2s ease;
 			&:hover {
 				background-color: rgb(79, 79, 120);
-				color: #fff;
+				background-color: var(--primary-color);
 			}
 
 			color: black;
@@ -38,50 +42,60 @@
 	}
 	.filterViaInput {
 		display: flex;
-
 		align-items: center;
 		justify-content: center;
 
 		.divStacja {
 			display: flex;
-			background-color: #fff;
+			background-color: var(--primary-color);
 			box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-			justify-content: center;
+			justify-content: space-around;
+			flex-direction: column;
+
 			height: 300px;
 			width: 400px;
 
 			flex-direction: column;
 
-
-
-			
-			.valueofSearch {
+			div {
 				display: flex;
 				align-items: center;
 				justify-items: center;
-				background-color: #fff;
+				background-color: var(--primary-color);
 				margin: 5px;
 				flex-direction: column;
-
-				.headache, .okejLike{
+				.isItRaining {
+					display: flex;
+					flex-direction: row;
+					.rainCorrect {
+						display: flex;
+						flex-direction: row;
+						.rain {
+							background-color: var(--primary-color);
+							margin: 10px;
+						}
+					}
+				}
+				.headache,
+				.okejLike {
 					width: 45px;
 					height: 30px;
-					background-color: #fff;
+					background-color: var(--primary-color);
 					margin: 5px;
 					display: flex;
 				}
 				span {
-					background-color: #fff;
+					background-color: var(--primary-color);
 				}
 				.searchedCity {
 					font-weight: 800;
-					background-color: #fff;
+					background-color: var(--primary-color);
 				}
 				.flexWeather {
 					display: flex;
 					align-items: center;
 					justify-items: center;
-					background-color: #fff;
+					background-color: var(--primary-color);
 					.chmura {
 						width: 45px;
 						height: 30px;
@@ -89,14 +103,14 @@
 					.sun {
 						width: 45px;
 						height: 50px;
-						background-color: #fff;
+						background-color: var(--primary-color);
 					}
 
 					span {
 						font-weight: 600;
 						font-size: 15px;
 						text-transform: uppercase;
-						background-color: #fff;
+						background-color: var(--primary-color);
 					}
 				}
 
@@ -116,4 +130,24 @@
 			}
 		}
 	}
+}
+@media (max-width: 1200px) {
+	.inputApi {
+	.inputWrapper {
+		width: 100vw;
+		height: 10vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		button{
+			width: 120px;
+		}
+		.input {
+			width: 60vw;
+			height: 4vh;
+			
+		}
+	
+	}
+}
 }

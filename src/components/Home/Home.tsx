@@ -65,15 +65,15 @@ const Home = () => {
 				{filterValue.length
 					? filterValue.map((el: Result, index: number) => (
 							<div className={styles.divStacja} key={index}>
-								<div className={styles.valueofSearch}>
+								<div>
 									<span className={styles.searchedCity}>{el.stacja}</span>
 								</div>
 
-								<div className={styles.valueofSearch}>
+								<div>
 									<span>Zmierzono w dniu: {el.data_pomiaru}</span>
 								</div>
 
-								<div className={styles.valueofSearch}>
+								<div>
 									<div className={styles.flexWeather}>
 										{el.temperatura ? (
 											el.temperatura < 20 ? (
@@ -84,7 +84,7 @@ const Home = () => {
 										) : null}{' '}
 										<span>{el.temperatura} stopni °C </span>{' '}
 									</div>
-									<div className={styles.valueofSearch}>
+									<div>
 										{el.cisnienie ? (
 											el.cisnienie > 1000 ? (
 												<img src={headache} className={styles.headache} />
@@ -96,7 +96,7 @@ const Home = () => {
 										<span>Ciśnienie: {el.cisnienie}</span>
 									</div>
 
-									<div className={styles.valueofSearch}>
+									<div className={styles.isItRaining}>
 										<span>Czy będzie padać? </span>
 										{el.suma_opadu ? (
 											el.suma_opadu > 5.0 ? (
